@@ -13,9 +13,7 @@ export default function Header({ type }) {
 						<li>
 							<NavLink
 								to="/"
-								style={isActive => ({
-									color: isActive ? "menuActive" : ""
-								})}
+								className={({ isActive }) => isActive ? "menuActive": "" }
 							>
 								Inicio
 							</NavLink>
@@ -23,9 +21,7 @@ export default function Header({ type }) {
 						<li>
 							<NavLink
 								to="/alumnos"
-								style={isActive => ({
-									color: isActive ? "menuActive" : ""
-								})}
+								className={({ isActive }) => isActive ? "menuActive": "" }
 							>
 								Alumnos
 							</NavLink>
@@ -33,9 +29,7 @@ export default function Header({ type }) {
 						<li>
 							<NavLink
 								to="/contenido"
-								style={isActive => ({
-									color: isActive ? "menuActive" : ""
-								})}
+								className={({ isActive }) => isActive ? "menuActive": "" }
 							>
 								Contenido
 							</NavLink>

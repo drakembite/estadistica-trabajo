@@ -105,7 +105,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .menuActive {
-    color: red;
+    color: ${props => props.theme.primary} !important;
   }
 `
 

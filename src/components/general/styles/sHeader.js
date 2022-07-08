@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
   position: ${props => props.type == 'content' ? 'static' : 'fixed'};
   width: 100%;
-  border-bottom: 1px solid ${props => props.theme.gray1};
+  border-bottom: 1px solid ${props => props.type == "content" ? props.theme.gray1 : 'transparent'};
 `;
 
 export const HeaderContent= styled.div`

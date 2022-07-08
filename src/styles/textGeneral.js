@@ -14,13 +14,13 @@ export const PrincipalTitle = styled.h1`
 export const SecondaryTitle = styled.h2`
   font-size: 2.750em;
   font-weight: ${props => props.theme.weight.bold};
-  margin: 0 0 42px 0;
+  margin: 50px 0 38px 0;
 `;
 
 export const TertiaryTitle = styled.h2`
   font-size: 1.500em;
   font-weight: ${props => props.theme.weight.bold};
-  margin: 0 0 32px 0;
+  margin: 50px 0 28px 0;
 `;
 
 export const Text = styled.p`
