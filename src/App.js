@@ -6,6 +6,9 @@ import LandingPage from './pages/LandingPage'
 import Blog from './pages/Blog'
 import BMuestraAleatoria from './components/blog/BMuestraAleatoria'
 import BDistribucionMuestralMedia from './components/blog/BDistribucionMuestralMedia'
+import BDistribucionMuestralProporcion from './components/blog/BDistribucionMuestralProporcion'
+import BDistribucionMuestralVarianza from './components/blog/BDistribucionMuestralVarianza'
+import BDistribucionMuestralRazonVarianzas from './components/blog/BDistribucionMuestralRazonVarianzas'
 import LandingLayout from './components/layout/LandingLayout'
 import { Routes, Route, Navigate } from "react-router-dom";
 
@@ -29,6 +32,18 @@ function App() {
         <Route
           path="/contenido/distribucion-muestral-media"
           element={<LandingLayout type="content" children={<BDistribucionMuestralMedia />} />}
+        />
+        <Route
+          path="/contenido/distribucion-muestral-proporcion"
+          element={<LandingLayout type="content" children={<BDistribucionMuestralProporcion/>} />}
+        />
+        <Route
+          path="/contenido/distribucion-muestral-varianza"
+          element={<LandingLayout type="content" children={<BDistribucionMuestralVarianza/>} />}
+        />
+        <Route
+          path="/contenido/distribucion-muestral-razon-varianzas"
+          element={<LandingLayout type="content" children={<BDistribucionMuestralRazonVarianzas/>} />}
         />
         <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
